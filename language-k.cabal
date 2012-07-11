@@ -1,0 +1,23 @@
+Name:               language-k
+Version:            0.4.0
+Synopsis:           Types and parsers for the K semantic framework
+License:            MIT
+License-file:       LICENSE
+Author:             David Lazar
+Maintainer:         David Lazar <lazar6@illinois.edu>
+Category:           Language
+Build-type:         Simple
+Cabal-version:      >=1.2
+
+Library
+  ghc-options:      -Wall
+
+  Hs-source-dirs:   src
+
+  Exposed-modules:
+    Language.K.Syntax
+    Language.K.Parser
+
+  Build-depends:
+    base >= 4 && < 5,
+    maude >= 0.6.1
